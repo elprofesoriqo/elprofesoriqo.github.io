@@ -1,0 +1,142 @@
+$light-primary-color: #ffffff;
+$light-background-color: #f0f0f0;
+$light-text-color: #000000;
+
+$dark-primary-color: #2c2c2c;
+$dark-background-color: #121212;
+$dark-text-color: #e0e0e0;
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 3rem;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $light-text-color; // Kolor w trybie jasnym
+    transition: color 0.3s ease;
+
+    body.dark-mode & {
+      color: $dark-text-color; // Kolor w trybie ciemnym
+    }
+  }
+
+  .schools-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .school {
+    width: 100%;
+    max-width: 600px;
+    padding: 1.5rem;
+    background-color: $light-primary-color;
+    color: $light-text-color; // Kolor tekstu w szkole w trybie jasnym
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    &.left {
+      align-self: flex-start;
+      animation: fadeInLeft 0.8s ease-in-out;
+    }
+
+    &.right {
+      align-self: flex-end;
+      animation: fadeInRight 0.8s ease-in-out;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h3, p {
+      color: $light-text-color; // Zawsze czarny tekst w szkole, niezależnie od motywu
+    }
+
+    body.dark-mode & {
+      background-color: $dark-primary-color;
+      color: $light-text-color; // Kolor tekstu w szkole w trybie ciemnym
+      box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .modal-content {
+    background-color: $light-primary-color;
+    color: $light-text-color;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: $light-text-color; // Kolor tekstu w nagłówku modalu
+    }
+
+    p {
+      color: $light-text-color; // Zawsze czarny tekst w modalnym oknie
+    }
+
+    body.dark-mode & {
+      background-color: $dark-primary-color;
+      color: $light-text-color; // Kolor tekstu w modalu w trybie ciemnym
+    }
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,13 @@
+[
+    {
+      "url": "https://example.com/school1",
+      "title": "School Name 1",
+      "description": "Details about the first school."
+    },
+    {
+      "url": "https://example.com/school2",
+      "title": "School Name 2",
+      "description": "Details about the second school."
+    }
+  ]
+  
