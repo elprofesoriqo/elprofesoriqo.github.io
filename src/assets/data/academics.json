@@ -1,12 +1,16 @@
 [
     {
-      "url": "https://example.com/school1",
-      "title": "School Name 1",
+      "url": "https://zse.bydgoszcz.pl/",
+      "title": "Electronic Technical School in Bydgoszczy",
+      "major": "IT Technician",
+      "date": "09.2019 - 05.2024",
       "description": "Details about the first school."
     },
     {
-      "url": "https://example.com/school2",
-      "title": "School Name 2",
+      "url": "https://pg.edu.pl/",
+      "title": "Gdańsk University of Technology",
+      "major": "BE Computer Science Engineering",
+      "date": "09.2024 - 01.2028",
       "description": "Details about the second school."
     }
   ]

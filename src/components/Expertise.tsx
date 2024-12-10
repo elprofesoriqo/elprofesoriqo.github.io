@@ -15,7 +15,10 @@ const labelsFirst = [
     "Python",
     "Django",
     "FastApi",
-    "PHP"
+    "PHP",
+    "C++",
+    "C",
+    "Java"
 ];
 
 const labelsSecond = [
@@ -50,7 +53,7 @@ function Expertise() {
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Backend Development</h3>
+                    <h3>Software</h3>
                     <p>Specializing in designing RESTful APIs, optimizing database management, and ensuring scalable, secure backend solutions throughout the SDLC process.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>

@@ -4,6 +4,8 @@ import "../assets/styles/Academics.scss";
 interface SchoolItem {
   url: string;
   title: string;
+  major: string;
+  date: string;
   description: string;
 }
 
@@ -46,6 +48,8 @@ function Academics() {
               onClick={() => openModal(school)}
             >
               <h3>{school.title}</h3>
+              <p>{school.major}<sub> {school.date}</sub></p>
+
             </div>
           ))}
         </div>
@@ -58,6 +62,8 @@ function Academics() {
           <div className="modal-content">
             <span className="close" onClick={closeModal}>&times;</span>
             <h2>{selectedSchool.title}</h2>
+            <p>{selectedSchool.description}</p>
+            <p>{selectedSchool.description}</p>
             <p>{selectedSchool.description}</p>
           </div>
         </div>
