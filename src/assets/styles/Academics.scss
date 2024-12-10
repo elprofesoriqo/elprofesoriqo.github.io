@@ -6,24 +6,12 @@ $dark-primary-color: #2c2c2c;
 $dark-background-color: #121212;
 $dark-text-color: #e0e0e0;
 
-.timeline-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  gap: 3rem;
 
   h1 {
     text-align: center;
     margin-bottom: 2rem;
-    color: $light-text-color; // Kolor w trybie jasnym
+    color: $dark-text-color; // Color in light mode
     transition: color 0.3s ease;
-
-    body.dark-mode & {
-      color: $dark-text-color; // Kolor w trybie ciemnym
-    }
   }
 
   .schools-wrapper {
@@ -62,14 +50,7 @@ $dark-text-color: #e0e0e0;
     h3, p {
       color: $light-text-color; // Zawsze czarny tekst w szkole, niezależnie od motywu
     }
-
-    body.dark-mode & {
-      background-color: $dark-primary-color;
-      color: $light-text-color; // Kolor tekstu w szkole w trybie ciemnym
-      box-shadow: 0 2px 5px rgba(255,255,255,0.1);
-    }
   }
-}
 
 .modal {
   position: fixed;
@@ -110,11 +91,6 @@ $dark-text-color: #e0e0e0;
 
     p {
       color: $light-text-color; // Zawsze czarny tekst w modalnym oknie
-    }
-
-    body.dark-mode & {
-      background-color: $dark-primary-color;
-      color: $light-text-color; // Kolor tekstu w modalu w trybie ciemnym
     }
   }
 }

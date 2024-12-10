@@ -11,7 +11,6 @@ function Academics() {
   const [schools, setSchools] = useState<SchoolItem[]>([]);
   const [selectedSchool, setSelectedSchool] = useState<SchoolItem | null>(null);
   const [showModal, setShowModal] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false); // Stan motywu
 
   // Ładowanie danych ze zewnętrznego pliku JSON
   useEffect(() => {
@@ -24,15 +23,6 @@ function Academics() {
       });
   }, []);
 
-  // Zmiana motywu (ciemny/jasny)
-  useEffect(() => {
-    const body = document.body;
-    if (isDarkMode) {
-      body.classList.add('dark-mode');
-    } else {
-      body.classList.remove('dark-mode');
-    }
-  }, [isDarkMode]);
 
   const openModal = (school: SchoolItem) => {
     setSelectedSchool(school);
