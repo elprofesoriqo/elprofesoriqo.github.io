@@ -1,27 +1,70 @@
 [
     {
-      "title": "Technology Consultant",
-      "location": "Dallas, TX",
-      "date": "2022 - present",
-      "description": "Full-stack Web Development, GenAI/LLM, Project Management, Business Development"
+      "title": "ERP Systems Administrator & SQL Developer",
+      "location": "Bydgoszcz, Remote",
+      "date": "06.2024 - 12.2024",
+      "company": "IDEA commerce S.A.",
+      "description": [],
+      "technologies": []
     },
     {
-      "title": "Full Stack Engineer",
-      "location": "Laie, HI",
-      "date": "2020 - 2022",
-      "description": "Frontend Development, Backend Development, User Experience, Team Leading"
+      "title": "Mobile Application Developer (Erasmus+ Intern)",
+      "location": "Sevilla",
+      "date": "01.2023 - 02.2023",
+      "company": "V-Art Escuela Audiovisual",
+      "description": [
+        "Ensured high performance and cross-device compatibility, optimizing app responsiveness and smooth operation across various Android devices",
+        "Implemented essential features such as user authentication, data storage with SQLite, and a dynamic user interface, which improved the overall user experience and functionality of the app",
+        "Developed and deployed Android mobile applications using Java and Android Studio, following object-oriented programming (OOP) principles to create scalable and maintainable code.\nDesigned a tourist places app with an integrated interactive map and API functionality, allowing users to explore nearby tourist destinations with detailed information"
+      ],
+      "technologies": [
+        "Java",
+        "Android Studio",
+        "Google Maps API",
+        "SQLite",
+        "Firebase Authentication",
+        "Git",
+        "Spline"
+      ]    
     },
     {
-      "title": "Staff Engineer Intern",
-      "location": "Laie, HI",
-      "date": "2021 - 2021",
-      "description": "Full-stack Development, API Development, User Experience"
+      "title": "Frontend Developer Intern",
+      "location": "Bydgoszcz",
+      "date": "04.2022 - 05.2022",
+      "company": "BluSoft Sp. z o.o.",
+      "description": [
+        "Contributed to an Agile development environment, participating in regular sprints, stand-ups, and code reviews, fostering continuous improvement and ensuring timely delivery of high-quality software",
+        "Enhanced project efficiency by adhering to best practices in version control using Git, facilitating smooth collaboration within the development team",
+        "Collaborated effectively with cross-functional teams, including designers, product managers, and QA specialists, to design and implement RESTful APIs and user interfaces, ensuring seamless integration across multiple services and platforms",
+        "Spearheaded the development and maintenance of both front-end and back-end features, leveraging JavaScript, Node.js, Express, and React to build dynamic, responsive applications that improved user experience and system performance"
+      ],
+      "technologies": [
+        "JavaScript",
+        "TypeScript",
+        "PHP",
+        "Node.js",
+        "Express",
+        "React",
+        "Git"
+      ]    
     },
     {
-      "title": "Data Analyst Intern",
-      "location": "Tokyo, Japan",
-      "date": "2020 - 2020",
-      "description": "Automation, Data Governance, Statistical Analysis"
-    }
+      "title": "Graphic Designer Intern",
+      "location": "Bydgoszcz",
+      "date": "11.2020 - 12.2020",
+      "company": "Studio Omega",
+      "description": [
+        "Created vector graphics using Adobe Illustrator",
+        "Gained knowledge in print production and publishing processes",
+        "Collaborated effectively within a design team on various creative projects\nDeveloped an understanding of color management and layout for print",
+        "Assisted in preparing designs for both digital and physical formats"
+      ],
+      "technologies": [
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Excel",
+        "Spline"
+      ]
+      }
   ]
   

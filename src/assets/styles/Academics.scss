@@ -6,54 +6,82 @@ $dark-primary-color: #2c2c2c;
 $dark-background-color: #121212;
 $dark-text-color: #e0e0e0;
 
-  sub{
-    font-size: 0.7rem;
+sub {
+  font-size: 0.7rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: $dark-text-color;
+  transition: color 0.3s ease;
+}
+
+.schools-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.school {
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5rem;
+  background-color: $light-primary-color;
+  color: $light-text-color;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  &.left {
+    align-self: flex-start;
+    animation: fadeInLeft 0.8s ease-in-out;
   }
 
-  h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: $dark-text-color; // Color in light mode
-    transition: color 0.3s ease;
+  &.right {
+    align-self: flex-end;
+    animation: fadeInRight 0.8s ease-in-out;
   }
 
-  .schools-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
-  .school {
-    width: 100%;
-    max-width: 600px;
-    padding: 1.5rem;
-    background-color: $light-primary-color;
-    color: $light-text-color; // Kolor tekstu w szkole w trybie jasnym
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-    &.left {
-      align-self: flex-start;
-      animation: fadeInLeft 0.8s ease-in-out;
-    }
-
-    &.right {
-      align-self: flex-end;
-      animation: fadeInRight 0.8s ease-in-out;
-    }
-
-    &:hover {
-      transform: scale(1.02);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    h3, p {
-      color: $light-text-color; // Zawsze czarny tekst w szkole, niezależnie od motywu
-    }
+  h3, p {
+    color: $light-text-color;
   }
+}
+
+.chip {
+  color: rgb(39, 40, 34) !important;
+  background-color: white !important;
+  font-size: 0.8rem !important;
+  height: 25px !important;
+  padding: 0 10px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.5em;
+  border: 1px solid #e0e0e0;
+
+  span {
+    font-family: 'Courier Prime', monospace;
+    color: rgb(39, 40, 34);
+  }
+}
+
+.flex-chips {
+  line-height: 2;
+  margin: 0.5;
+
+  .chip-title {
+    color: black;
+    padding-right: 10px;
+  }
+}
 
 .modal {
   position: fixed;
@@ -73,7 +101,7 @@ $dark-text-color: #e0e0e0;
     padding: 2rem;
     border-radius: 12px;
     width: 90%;
-    max-width: 500px;
+    max-width: 900px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     position: relative;
     text-align: center;
@@ -89,11 +117,11 @@ $dark-text-color: #e0e0e0;
     h2 {
       margin-top: 0;
       margin-bottom: 1rem;
-      color: $light-text-color; // Kolor tekstu w nagłówku modalu
+      color: $light-text-color;
     }
 
     p {
-      color: $light-text-color; // Zawsze czarny tekst w modalnym oknie
+      color: $light-text-color;
     }
   }
 }
@@ -117,5 +145,21 @@ $dark-text-color: #e0e0e0;
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media screen {
+  @media (max-width: 768px) {
+    .schools-wrapper {
+      display: block;
+    }
+    
+    .school {
+      margin-bottom: 2rem;
+      
+      &.left, &.right {
+        align-self: center;
+      }
+    }
   }
 }

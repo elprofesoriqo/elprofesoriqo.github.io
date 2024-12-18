@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../assets/styles/Project.scss";
 
 interface ProjectItem {
-  url: string;
   title: string;
   description: string;
 }
@@ -26,9 +25,7 @@ function Project() {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project" key={index}>
-            <a href={project.url} target="_blank" rel="noreferrer">
               <h2>{project.title}</h2>
-            </a>
             <p>{project.description}</p>
           </div>
         ))}

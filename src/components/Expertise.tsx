@@ -28,7 +28,6 @@ const labelsSecond = [
     "AWS",
     "Linux",
     "MySQL",
-    "Pandas",
     "PostgreSQL",
     "MongoDB",
     "Firebase",

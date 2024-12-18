@@ -6,7 +6,8 @@ interface SchoolItem {
   title: string;
   major: string;
   date: string;
-  description: string;
+  activities: string;
+  courses: string[];
 }
 
 function Academics() {
@@ -14,7 +15,6 @@ function Academics() {
   const [selectedSchool, setSelectedSchool] = useState<SchoolItem | null>(null);
   const [showModal, setShowModal] = useState(false);
 
-  // Ładowanie danych ze zewnętrznego pliku JSON
   useEffect(() => {
     import('../assets/data/academics.json')
       .then((data) => {
@@ -24,7 +24,6 @@ function Academics() {
         console.error('Error loading school data:', error);
       });
   }, []);
-
 
   const openModal = (school: SchoolItem) => {
     setSelectedSchool(school);
@@ -49,7 +48,6 @@ function Academics() {
             >
               <h3>{school.title}</h3>
               <p>{school.major}<sub> {school.date}</sub></p>
-
             </div>
           ))}
         </div>
@@ -62,9 +60,14 @@ function Academics() {
           <div className="modal-content">
             <span className="close" onClick={closeModal}>&times;</span>
             <h2>{selectedSchool.title}</h2>
-            <p>{selectedSchool.description}</p>
-            <p>{selectedSchool.description}</p>
-            <p>{selectedSchool.description}</p>
+            <p>{selectedSchool.activities}</p>
+
+            <div className="flex-chips">
+              <span className="chip-title">Courses:</span>
+              {selectedSchool.courses.map((course, index) => (
+                <div key={index} className="chip">{course}</div>
+              ))}
+            </div>
           </div>
         </div>
       )}

@@ -11,16 +11,23 @@ interface TimelineItem {
   title: string;
   location: string;
   date: string;
-  description: string;
+  company: string;
+  description: string[];
+  technologies: string[];
 }
 
 function Timeline() {
   const [timelineData, setTimelineData] = useState<TimelineItem[]>([]); // Definiujemy typ tablicy obiektów
+  const [selectedItem, setSelectedItem] = useState<TimelineItem | null>(null); // Przechowujemy kliknięty element
 
   // Jeśli dane importowane są statycznie:
   useEffect(() => {
     setTimelineData(data); // TypeScript teraz wie, że `data` pasuje do `TimelineItem[]`
   }, []);
+
+  const closeModal = () => {
+    setSelectedItem(null);
+  };
 
   return (
     <div id="history">
@@ -36,17 +43,43 @@ function Timeline() {
               date={item.date}
               iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
               icon={<FontAwesomeIcon icon={faBriefcase} />}
+              onTimelineElementClick={() => setSelectedItem(item)}
             >
               <h3 className="vertical-timeline-element-title">{item.title}</h3>
-              <h4 className="vertical-timeline-element-subtitle">{item.location}</h4>
-              <p>{item.description}</p>
+              <h4 className="vertical-timeline-element-subtitle">{item.company}</h4>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
+
+        {/* Modal */}
+        {selectedItem && (
+          <div className="modal-overlay" onClick={closeModal}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <span className="close" onClick={closeModal}>&times;</span>
+              <h2 id="tit">{selectedItem.title}</h2>
+
+              {/* Opis jako lista */}
+              <ul>
+                {selectedItem.description.map((desc, index) => (
+                  <li key={index}>{desc}</li>
+                ))}
+              </ul>
+
+              {/* Technologie jako chipy */}
+              <div className="flex-chips">
+                <span className="chip-title">Technologies:</span>
+                {selectedItem.technologies.map((tech, index) => (
+                  <span key={index} className="chip">
+                    <span>{tech}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
 }
 
 export default Timeline;
-
