@@ -22,7 +22,7 @@ function Essay() {
 
   return (
     <div className="essays-container" id="essays">
-      <h1>Essays</h1>
+      <h1>Research</h1>
       <div className="essays-grid">
         {essays.map((essay, index) => (
           <div className="essay" key={index}>

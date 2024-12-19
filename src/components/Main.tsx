@@ -14,14 +14,14 @@ function Main() {
         <div className="content">
           <div className="social_icons">
             <a href="https://github.com/elprofesoriqo" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/igor-jankowski-933280304/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://www.linkedin.com/in/igor-jankowski/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Igor Jankowski</h1>
           <p>Data Architect</p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/elprofesoriqo" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/igor-jankowski-933280304/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://www.linkedin.com/in/igor-jankowski/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
         </div>
       </div>
