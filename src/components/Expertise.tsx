@@ -55,7 +55,8 @@ function Expertise() {
                     <h3>Software</h3>
                     <p>Specializing in designing RESTful APIs, optimizing database management, and ensuring scalable, secure backend solutions throughout the SDLC process.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                    <p>Tech stack:</p>
+                        <span className="chip-title"></span>
                         {labelsFirst.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -67,7 +68,8 @@ function Expertise() {
                     <h3>Cloud & Data</h3>
                     <p>Experienced in working with AWS for deploying and managing scalable applications. Proficient in MySQL and MongoDB, handling both relational and NoSQL databases, including schema design, optimization, and managing large datasets.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                    <p>Tech stack:</p>
+                        <span className="chip-title"></span>
                         {labelsSecond.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -79,7 +81,8 @@ function Expertise() {
                     <h3>ML & Data</h3>
                     <p>Skilled in developing and deploying machine learning models with PyTorch and Scikit-learn. Expertise in data analysis using Pandas and NumPy, along with strong capabilities in data preprocessing, model training, and optimization for both structured and unstructured data.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <p>Tech stack:</p>
+                        <span className="chip-title"></span>
                         {labelsThird.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
