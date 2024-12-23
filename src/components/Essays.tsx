@@ -26,9 +26,7 @@ function Essay() {
       <div className="essays-grid">
         {essays.map((essay, index) => (
           <div className="essay" key={index}>
-            <a href={essay.url} target="_blank" rel="noreferrer">
               <h2>{essay.title}</h2>
-            </a>
             <p>{essay.description}</p>
           </div>
         ))}
