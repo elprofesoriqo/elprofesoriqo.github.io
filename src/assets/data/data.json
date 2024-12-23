@@ -4,8 +4,27 @@
       "location": "Bydgoszcz, Remote",
       "date": "06.2024 - 12.2024",
       "company": "IDEA commerce S.A.",
-      "description": [],
-      "technologies": []
+      "description": [
+        "Analyzed and integrated APIs from 10+ companies to develop custom solutions for e-commerce platforms, leading to a 15% increase in customer engagement through enhanced product offerings",
+        "Developed and optimized ETL (Extract, Transform, Load) processes for Metabase, enhancing data accuracy and enabling more timely and informed reporting for stakeholders",
+        "Leveraged PostgreSQL data to identify trending products for over 30 clients, streamlining inventory management and reducing stockouts by 15%, contributing to a 10% increase in sales efficiency.",
+        "Created dynamic and insightful data visualizations using BI tools, empowering teams to track key metrics and uncover business trends, leading to a 30% improvement in operational decision-making.",
+        "Provided strategic consulting to e-commerce clients, optimizing store operations and contributing to improved sales performance."
+      ],
+      "technologies": [
+        "Python",
+        "FastApi",
+        "SQL",
+        "Pandas",
+        "Numpy",
+        "PostgreSQL",
+        "Oddo",
+        "Metabese BI",
+        "PowerBI",
+        "Microsoft Office",
+        "ERP",
+        "Customer Service"
+      ]
     },
     {
       "title": "Mobile Application Developer (Erasmus+ Intern)",
@@ -33,9 +52,10 @@
       "date": "04.2022 - 05.2022",
       "company": "BluSoft Sp. z o.o.",
       "description": [
-        "Collaborated effectively with cross-functional teams, including designers, product managers, and QA specialists, to design and implement RESTful APIs and user interfaces, ensuring seamless integration across multiple services and platforms",
-        "Spearheaded the development and maintenance of both front-end and back-end features, leveraging JavaScript, Node.js, Express, and React to build dynamic, responsive applications that improved user experience and system performance"
-      ],
+        "Collaborated with cross-functional teams, including designers, product managers, and QA specialists, to design and implement RESTful APIs and user interfaces for over 5 event websites and company pages in Bydgoszcz, ensuring seamless integration and a 10% improvement in user interaction",
+        "Spearheaded the development and maintenance of both front-end and back-end features, leveraging JavaScript, Node.js, Express, and React to build dynamic, responsive applications that improved user experience and system performance",
+        "Implemented an efficient content management system (CMS), allowing event organizers and business owners to update their sites independently, improving workflow and reducing update times by 40%"
+    ],
       "technologies": [
         "JavaScript",
         "TypeScript",
@@ -43,6 +63,10 @@
         "Node.js",
         "Express",
         "React",
+        "Axios",
+        "Scss",
+        "Css",
+        "Html",
         "Git"
       ]    
     },
@@ -54,9 +78,10 @@
       "description": [
         "Created vector graphics using Adobe Illustrator",
         "Gained knowledge in print production and publishing processes",
-        "Collaborated effectively within a design team on various creative projects\nDeveloped an understanding of color management and layout for print",
-        "Assisted in preparing designs for both digital and physical formats"
-      ],
+        "Collaborated effectively within a design team on various creative projects",
+        "Developed a strong understanding of color management and layout for print, ensuring consistency across all deliverables and contributing to a 10% increase in client satisfaction",
+        "Assisted in automating the design processing workflow, streamlining file handling and approval stages, which improved overall efficiency and reduced processing time by 10%"
+    ],
       "technologies": [
         "Adobe Illustrator",
         "Adobe Photoshop",
