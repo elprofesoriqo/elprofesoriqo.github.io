@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../assets/styles/Essays.scss"; // Importujemy styl
+import "../assets/styles/Essays.scss";
 
 interface EssayItem {
   title: string;
@@ -11,9 +11,9 @@ function Essay() {
   const [essays, setEssays] = useState<EssayItem[]>([]);
 
   useEffect(() => {
-    import('../assets/data/essays.json') // Ładowanie pliku JSON
+    import('../assets/data/essays.json')
       .then((data) => {
-        setEssays(data.default); // `default` jest częścią importu dynamicznego w Webpacku
+        setEssays(data.default);
       })
       .catch((error) => {
         console.error('Error loading essay data:', error);
