@@ -10,7 +10,10 @@ sub {
   font-size: 0.7rem;
 }
 
-h1 {
+ul {
+  list-style: none
+}
+  h1 {
   text-align: center;
   margin-bottom: 2rem;
   color: $dark-text-color;
