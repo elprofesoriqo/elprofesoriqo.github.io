@@ -1,4 +1,3 @@
-
 [
   {
     "title": "Machine Learning Engineer & Researcher",
@@ -7,6 +6,8 @@
     "company": "Gdańsk Medical University - MiLab organisation",
     "description": [
       "Develop and refine deep learning models for spinal stenosis classification, muscle activity analysis, and soft tissue segmentation (muscles, nerves) as part of the ML.Spine project, utilizing state-of-the-art AI techniques and classical machine learning approaches",
+      "Conduct data preprocessing and feature engineering for multimodal medical datasets, including text, numerical, and imaging data, to enhance the performance of predictive models in cardiogenic shock interventions",
+      "Design and implement a predictive model for cardiogenic shock progression, enabling clinicians to estimate the optimal window for intervention based on heterogeneous medical data in collaboration with a cardiology department",
       "Integrate advanced visualization tools to present segmentation and classification results to clinical experts, improving interpretability and facilitating medical decision-making"
     ],
     "technologies": [

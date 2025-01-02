@@ -15,9 +15,7 @@ interface TimelineItem {
   description: string[];
   technologies: string[];
 }
- // "Conduct data preprocessing and feature engineering for multimodal medical datasets, including text, numerical, and imaging data, to enhance the performance of predictive models in cardiogenic shock interventions",
-// "Design and implement a predictive model for cardiogenic shock progression, enabling clinicians to estimate the optimal window for intervention based on heterogeneous medical data in collaboration with a cardiology department",
-      
+
 function Timeline() {
   const [timelineData, setTimelineData] = useState<TimelineItem[]>([]); // Definiujemy typ tablicy obiektów
   const [selectedItem, setSelectedItem] = useState<TimelineItem | null>(null); // Przechowujemy kliknięty element
