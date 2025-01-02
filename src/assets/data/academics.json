@@ -4,7 +4,10 @@
       "title": "Electronic Technical School in Bydgoszcz",
       "major": "IT Technician, Computer Engineering",
       "date": "09.2019 - 05.2024",
-      "activities": "Participated in algorithmic contests; selected as one of the top students to join an Erasmus+ program.",
+      "activities": [
+        "Participated in algorithmic contests",
+        "Selected as one of the top students to join an Erasmus+ program"
+      ],
       "courses": [
         "Computer Networks",
         "Cisco IOS",
@@ -26,10 +29,22 @@
       "title": "Gdańsk University of Technology",
       "major": "BE. Computer Science Engineering",
       "date": "09.2024 - 01.2028",
-      "activities": "Details about the second school.",
+      "activities": [
+        "Member of Machine Learning Club Gradient:\nResponsible for developing a Large Language Model (LLM) for the university to provide information about scientific clubs and activities across the campus",
+        "Member of Data Science Club:\nResponsible for creating data visualizations for a course presented during club meetings",
+        "Member of Algorithmic Problem-Solving Club SFERA:\nActively developing skills in solving algorithmic problems and preparing for programming contests such as SPOJ, Informatics Olympiads, and ACM International Collegiate Programming Contest (ICPC)"
+      ],
       "courses":[
-        "Git",
-        "GitHub Actions"
+        "Introduction to Programming",
+        "Web Development",
+        "JavaScript",
+        "PHP",
+        "Html",
+        "Css",
+        "C",
+        "C++",
+        "Linear Algebra",
+        "Mathematical Analysis"
       ]
     }
   ]

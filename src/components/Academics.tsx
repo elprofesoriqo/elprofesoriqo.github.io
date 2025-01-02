@@ -6,7 +6,7 @@ interface SchoolItem {
   title: string;
   major: string;
   date: string;
-  activities: string;
+  activities: string[];
   courses: string[];
 }
 
@@ -55,22 +55,27 @@ function Academics() {
         <p>Loading academic information...</p>
       )}
 
-      {showModal && selectedSchool && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={closeModal}>&times;</span>
-            <h2>{selectedSchool.title}</h2>
-            <p>{selectedSchool.activities}</p>
+{showModal && selectedSchool && (
+  <div className="modal">
+    <div className="modal-content">
+      <span className="close" onClick={closeModal}>&times;</span>
+      <h2>{selectedSchool.title}</h2>
+      <h3>Activities:</h3>
+      <ul>
+        {selectedSchool.activities.map((activity, index) => (
+          <li key={index}>{activity}</li>
+        ))}
+      </ul>
+      <div className="flex-chips">
+        <span className="chip-title">Courses:</span>
+        {selectedSchool.courses.map((course, index) => (
+          <div key={index} className="chip">{course}</div>
+        ))}
+      </div>
+    </div>
+  </div>
+)}
 
-            <div className="flex-chips">
-              <span className="chip-title">Courses:</span>
-              {selectedSchool.courses.map((course, index) => (
-                <div key={index} className="chip">{course}</div>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

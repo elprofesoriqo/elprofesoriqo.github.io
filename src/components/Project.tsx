@@ -23,7 +23,7 @@ function Project() {
 
   return (
     <div className="projects-container" id="projects">
-      <h1>Projects</h1>
+      <h1>Current Projects</h1>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project" key={index}>
