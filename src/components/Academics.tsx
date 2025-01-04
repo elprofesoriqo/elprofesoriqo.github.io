@@ -60,7 +60,6 @@ function Academics() {
     <div className="modal-content">
       <span className="close" onClick={closeModal}>&times;</span>
       <h2>{selectedSchool.title}</h2>
-      <h3>Activities:</h3>
       <ul>
         {selectedSchool.activities.map((activity, index) => (
           <li key={index}>{activity}</li>
