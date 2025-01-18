@@ -5,6 +5,11 @@
         "references": "https://github.com/elprofesoriqo/MiLab"
     },
     {
+        "title": "AthSpot - Social Fitness App",
+        "description": "Revolutionary social media application designed to connect sports enthusiasts, enable activity planning, and manage bookings for sports venues.",
+        "references": "https://github.com/AthSpot"
+    },
+    {
         "title": "ML Optimizer",
         "description": "ML Optimizer is an innovative Python library designed to revolutionize machine learning workflows by automating data preprocessing, tensor optimization, and model selection.",
         "references": "https://github.com/elprofesoriqo/ml-optimizer"

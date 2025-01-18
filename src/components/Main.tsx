@@ -18,6 +18,7 @@ function Main() {
           </div>
           <h1>Igor Jankowski</h1>
           <p>ML & Data Enthusiast</p>
+          <p>Currently working on  <a href="https://github.com/AthSpot" target="_blank" rel="noreferrer"><b>AthSpot</b></a></p>
           <div className="mobile_social_icons">
             <a href="https://github.com/elprofesoriqo" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/igor-jankowski/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
