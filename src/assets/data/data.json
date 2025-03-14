@@ -1,12 +1,12 @@
 [
   {
-    "title": "Machine Learning Engineer & Researcher",
+    "title": "Machine Learning Engineer",
     "location": "Gdańsk",
     "date": "11.2024 - present",
     "company": "Gdańsk Medical University - MiLab organisation",
     "description": [
-      "Develop and refine deep learning models for spinal stenosis classification, muscle activity analysis, and soft tissue segmentation (muscles, nerves) as part of the ML.Spine project, utilizing state-of-the-art AI techniques and classical machine learning approaches",
-      "Integrate advanced visualization tools to present segmentation and classification results to clinical experts, improving interpretability and facilitating medical decision-making"
+"Develop and refine deep learning models for spinal stenosis classification, muscle activity analysis, and soft tissue segmentation (muscles, nerves) as part of the ML.Spine project.",
+"Integrate advanced visualization tools to present segmentation and classification results, improving interpretability."
     ],
     "technologies": [
       "Python",
@@ -25,11 +25,10 @@
       "date": "06.2024 - 12.2024",
       "company": "IDEA commerce S.A.",
       "description": [
-        "Analyzed and integrated APIs from 5+ companies to develop custom solutions for e-commerce platforms, leading to a ~8% increase in customer engagement through enhanced product offerings",
-        "Developed and optimized ETL (Extract, Transform, Load) processes for Metabase, enhancing data accuracy",
-        "Leveraged PostgreSQL data to identify trending products for over 12 clients, streamlining inventory management and reducing stockouts by ~15%, contributing to a ~18% increase in sales efficiency.",
-        "Created dynamic and insightful data visualizations using BI tools, empowering teams to track key metrics and uncover business trends, leading to a ~11% improvement in operational decision-making.",
-        "Provided strategic consulting to e-commerce clients, optimizing store operations and contributing to improved sales performance."
+"Analyzed APIs to develop custom solutions for e-commerce platforms, increasing customer engagement through enhanced product offerings.",        "Developed and optimized ETL (Extract, Transform, Load) processes for Metabase, enhancing data accuracy",
+"Leveraged PostgreSQL data to identify trending products for clients, streamlining inventory management, reducing stockouts, and improving sales efficiency.",
+"Created dynamic and insightful data visualizations using BI tools, enabling teams to track key metrics, uncover business trends, and enhance operational decision-making.",
+"Provided strategic consulting to e-commerce clients, optimizing store operations and driving improved sales performance."
       ],
       "technologies": [
         "Python",

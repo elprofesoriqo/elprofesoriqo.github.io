@@ -37,7 +37,7 @@ function Academics() {
 
   return (
     <div className="timeline-container" id="school">
-      <h1>Academic Timeline</h1>
+      <h1>Education Timeline</h1>
       {schools.length > 0 ? (
         <div className="schools-wrapper">
           {schools.map((school, index) => (
