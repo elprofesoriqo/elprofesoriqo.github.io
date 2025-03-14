@@ -4,9 +4,8 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "../assets/styles/Timeline.scss";
-import data from "../assets/data/data.json"; // Jeśli importujemy statycznie
+import data from "../assets/data/data.json";
 
-// Definicja interfejsu dla elementów timeline
 interface TimelineItem {
   title: string;
   location: string;
@@ -17,17 +16,46 @@ interface TimelineItem {
 }
 
 function Timeline() {
-  const [timelineData, setTimelineData] = useState<TimelineItem[]>([]); // Definiujemy typ tablicy obiektów
-  const [selectedItem, setSelectedItem] = useState<TimelineItem | null>(null); // Przechowujemy kliknięty element
+  const [timelineData, setTimelineData] = useState<TimelineItem[]>([]);
+  const [selectedItem, setSelectedItem] = useState<TimelineItem | null>(null);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
-  // Jeśli dane importowane są statycznie:
+  // Check for mobile device
   useEffect(() => {
-    setTimelineData(data); // TypeScript teraz wie, że `data` pasuje do `TimelineItem[]`
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    // Check on initial load
+    checkMobile();
+    
+    // Add listener for window resize
+    window.addEventListener('resize', checkMobile);
+    
+    // Clean up
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  useEffect(() => {
+    setTimelineData(data);
   }, []);
 
   const closeModal = () => {
     setSelectedItem(null);
   };
+
+  // Prevent body scrolling when modal is open on mobile
+  useEffect(() => {
+    if (selectedItem && isMobile) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [selectedItem, isMobile]);
 
   return (
     <div id="history">
@@ -51,28 +79,27 @@ function Timeline() {
           ))}
         </VerticalTimeline>
 
-        {/* Modal */}
         {selectedItem && (
           <div className="modal-overlay" onClick={closeModal}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
               <span className="close" onClick={closeModal}>&times;</span>
               <h2 id="tit">{selectedItem.title}</h2>
-
-              {/* Opis jako lista */}
+              <h4>{selectedItem.company} • {selectedItem.location}</h4>
               <ul>
                 {selectedItem.description.map((desc, index) => (
                   <li key={index}>{desc}</li>
                 ))}
               </ul>
 
-              {/* Technologie jako chipy */}
               <div className="flex-chips">
                 <span className="chip-title">Technologies:</span>
-                {selectedItem.technologies.map((tech, index) => (
-                  <span key={index} className="chip">
-                    <span>{tech}</span>
-                  </span>
-                ))}
+                <div className="chips-container">
+                  {selectedItem.technologies.map((tech, index) => (
+                    <span key={index} className="chip">
+                      <span>{tech}</span>
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
